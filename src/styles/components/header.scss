@@ -1,0 +1,78 @@
+@import "../config/variables";
+
+
+.header {
+    
+    background-color:white;
+    box-shadow: 0px 2px 8px rgba(134, 140, 144, 0.05);
+
+    .container {
+        height: 88px;
+        display: flex;
+        align-items: center;
+        margin-left: 72px;
+        margin-right: 72px;
+    }
+
+    &-logo {
+        margin-right: 72px;
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 24px;
+            height: 24px;
+            margin-right: 16px;
+        }
+
+        a {
+            color: #F2911B;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 24px;
+        }        
+    }
+
+    &-menu {
+        display: flex;
+        align-items: center;
+
+        a {
+            padding: 12px;
+            padding-left: 0px;
+            margin-right: 24px;
+            color: $basic-gray;
+            font-style: normal;
+            font-weight: bold;
+        }
+
+        .active {
+            color: $text-color;
+            position: relative;
+        }
+
+        .active:after {
+            content: "";
+            background: #F2911B;;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50%;
+            height: 2px;
+            border-radius: 2px;
+        }
+    }
+
+    &-icons {
+        margin-left: auto;
+        background-color: white;
+
+        svg {
+            color: $secondary-gray;
+            width: 24px;
+            height: 24px;
+            margin-left: 32px;
+        }
+    }
+}

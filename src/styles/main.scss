@@ -1,0 +1,13 @@
+// 
+@import "config/variables";
+//
+@import "common/normalize";
+@import "common/formalize";
+@import "common/global";
+// global components
+@import "components/header";
+// Pages and components
+@import "pages/dashboard";
+@import "pages/market";
+@import "pages/trends";
+

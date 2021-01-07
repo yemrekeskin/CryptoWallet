@@ -1,0 +1,48 @@
+.dashboard .container {
+  padding: 40px;
+  width: 100%; }
+
+.dashboard-widget {
+  display: flex; }
+  .dashboard-widget-balance {
+    background-color: white;
+    height: 324px;
+    margin: 32px;
+    box-shadow: 0px 2px 8px rgba(134, 140, 144, 0.05);
+    border-radius: 16px;
+    flex: 1; }
+  .dashboard-widget-advertisement {
+    background-color: white;
+    height: 324px;
+    margin: 32px;
+    box-shadow: 0px 2px 8px rgba(134, 140, 144, 0.05);
+    border-radius: 16px;
+    flex: 1; }
+  .dashboard-widget-operations {
+    background-color: white;
+    height: 324px;
+    margin: 32px;
+    box-shadow: 0px 2px 8px rgba(134, 140, 144, 0.05);
+    border-radius: 16px;
+    flex: 2; }
+  .dashboard-widget-rates {
+    background-color: white;
+    height: 324px;
+    margin: 32px;
+    box-shadow: 0px 2px 8px rgba(134, 140, 144, 0.05);
+    border-radius: 16px;
+    flex: 1; }
+  .dashboard-widget-feed {
+    background-color: white;
+    height: 324px;
+    margin: 32px;
+    box-shadow: 0px 2px 8px rgba(134, 140, 144, 0.05);
+    border-radius: 16px;
+    flex: 2; }
+  .dashboard-widget-wallets {
+    background-color: white;
+    height: 324px;
+    margin: 32px;
+    box-shadow: 0px 2px 8px rgba(134, 140, 144, 0.05);
+    border-radius: 16px;
+    flex: 1; }

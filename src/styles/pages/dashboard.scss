@@ -1,0 +1,394 @@
+@import "../config/variables.scss";
+
+@mixin widget {
+  background-color: white;
+  height: 324px;
+  margin: 32px;
+  box-shadow: 0px 2px 8px rgba(134, 140, 144, 0.05);
+  border-radius: 16px;
+}
+
+.dashboard {
+  .container {
+    padding: 40px;
+    width: 100%;
+  }
+
+  &-widget {
+    display: flex;
+
+    // Widget -> BALANCE
+    &-balance {
+      @include widget;
+      flex: 1;
+      align-items: center;
+
+      &-header {
+        padding: $offset;
+        display: flex;
+        align-items: center;
+
+        span {
+          color: $text-color;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 20px;
+          line-height: 32px;
+        }
+
+        div {
+          margin-left: auto;
+          color: $secondary-gray;
+        }
+      }
+    }
+
+    // Widget -> ADVERTISEMENT
+    &-advertisement {
+      @include widget;
+      flex: 1;
+
+      background: linear-gradient(139.39deg, #373b44 0%, #4286f4 100%), #ffffff;
+      color: white;
+      padding: $offset;
+
+      display: flex;
+      flex-direction: column;
+      align-items:flex-start;
+
+      &-header {
+        color: #ffffff;
+        text-shadow: 0px 2px 4px rgba(255, 255, 255, 0.15);
+
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 48px;
+
+        margin-bottom: 8px;
+
+        flex: 4;
+
+        span:nth-of-type(2) {
+          font-size: 32px;
+        }
+      }
+
+      &-body {
+
+        flex: 1;
+
+        button {
+          border: 1px solid #ffffff;
+          box-sizing: border-box;
+          border-radius: 24px;
+
+          background-color: transparent;
+          color: white;
+
+          padding: 12px 22px;
+        }
+
+        button:focus {
+          outline: 0;
+        }
+      }
+    }
+
+    // Widget -> OPERATIONS
+    &-operations {
+      @include widget;
+      flex: 3;
+      align-items: center;
+
+      &-header {
+        padding: $offset;
+        display: flex;
+        align-items: center;
+
+        span {
+          color: $text-color;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 20px;
+          line-height: 32px;
+        }
+
+        div:nth-of-type(1) {
+          margin-left: 8px;
+          color: $secondary-gray;
+        }
+
+        div:nth-of-type(2) {
+          margin-left: auto;
+          color: $secondary-gray;
+        }
+      }
+    }
+
+    // Widget -> RATES
+    &-rates {
+      @include widget;
+      flex: 1;
+      align-items: center;
+
+      &-header {
+        padding: $offset;
+        display: flex;
+        align-items: center;
+
+        span {
+          color: $text-color;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 20px;
+          line-height: 32px;
+        }
+
+        span:nth-of-type(2) {
+            color: $secondary-gray;
+        }
+
+        div:nth-of-type(1) {
+            margin-left: 0px;           
+            text-align: center;
+            color: $secondary-gray;
+
+            svg {
+                width: 24px;
+                height: 24px;
+            }
+        }
+  
+          div:nth-of-type(2) {
+            margin-left: auto;
+            color: $secondary-gray;
+          }
+      }
+
+      &-list {
+
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        overflow-x: hidden; 
+        overflow-y: scroll; 
+
+        &::-webkit-scrollbar-track
+        {
+          border-radius: 10px;
+          background-color: white;
+        }
+        
+        &::-webkit-scrollbar
+        {
+          width: 5px;
+          background-color: #F5F5F5;
+          margin-right: 5px;
+        }
+        
+        &::-webkit-scrollbar-thumb
+        {
+          border-radius: 10px;
+          background-color: $secondary-gray;
+        }
+        
+        &-item {
+
+          display: flex;
+          flex-direction: row;    
+          align-items: center;  
+          
+          margin-left: $offset;
+          margin-right: $offset;
+          margin-bottom: 12px;
+
+          &-logo {
+            flex:2;      
+            width: 48px;
+            height: 32px;
+
+            img {
+              width: 34px;
+              height: 32px;
+            }
+           
+          }
+
+          &-name {
+            flex:6;
+            text-align: center;
+            color: $basic-gray;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+          }
+
+          &-amount {
+            flex:6;
+            text-align: right;
+            color: $text-color;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 24px;
+          }
+        }        
+      }
+    }
+
+    // Widget -> FEED
+    &-feed {
+      @include widget;
+      flex: 3;
+      align-items: center;
+
+      &-header {
+        padding: $offset;
+        display: flex;
+        align-items: center;
+
+        span {
+          color: $text-color;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 20px;
+          line-height: 32px;
+        }
+
+        div:nth-of-type(1) {
+          margin-left: 8px;
+          color: $secondary-gray;
+        }
+
+        div:nth-of-type(2) {
+          margin-left: auto;
+          color: $secondary-gray;
+        }
+      }
+
+      &-list {
+
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        overflow-x: hidden; 
+        overflow-y: scroll; 
+        
+        &::-webkit-scrollbar-track
+        {
+          border-radius: 10px;
+          background-color: white;
+        }
+        
+        &::-webkit-scrollbar
+        {
+          width: 5px;
+          background-color: #F5F5F5;
+          margin-right: 5px;
+        }
+        
+        &::-webkit-scrollbar-thumb
+        {
+          border-radius: 10px;
+          background-color: $secondary-gray;
+        }
+        
+
+        &-item {
+          margin-left: $offset;
+          margin-right: $offset;
+          margin-bottom: ($offset / 2);
+
+          display: flex;
+          flex-direction: row;
+
+          &-left {
+
+            padding-left: 20px;
+            border-left: 4px solid #DCE0E2;
+            // opacity: 0.4;
+            border-radius: 2px;
+
+            flex: 23;
+
+            p {
+              font-style: normal;
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 24px;
+              color: $text-color;
+            }
+
+
+            div {
+              
+              display: flex;
+              flex-direction: row;              
+
+              span:nth-of-type(1) {              
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                color: $basic-gray;
+              }
+  
+              span:nth-of-type(2) {
+                margin-left: auto;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 20px;
+                color: rgba(242, 145, 27, 0.6);
+              }
+            }
+            
+          }
+
+          &-right {
+            margin-left: auto;
+            vertical-align: middle;
+            justify-content: center;
+            flex: 1;
+            svg {
+              color: $secondary-gray;
+              width: 24px;
+              height: 24px;
+            }            
+          }
+        }
+
+      }
+    }
+
+    // Widget -> WALLETS
+    &-wallets {
+      @include widget;
+      flex: 1;
+      align-items: center;
+
+      &-header {
+        padding: $offset;
+        display: flex;
+        align-items: center;
+
+        span {
+          color: $text-color;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 20px;
+          line-height: 32px;
+        }
+
+        div {
+          margin-left: auto;
+          color: $secondary-gray;
+        }
+      }
+    }
+
+
+  }
+}

@@ -1,0 +1,23 @@
+@import "../config/variables";
+
+body {
+    font-family: $font-family;
+    background-color: #F3F5F9;
+}
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+.border-success {
+    border-color: $reptile-green-light;
+}
+
+.border-error {
+    border-color: $reptile-green-light;
+}

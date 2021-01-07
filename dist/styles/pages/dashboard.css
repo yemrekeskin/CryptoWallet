@@ -1,0 +1,265 @@
+.dashboard .container {
+  padding: 40px;
+  width: 100%; }
+
+.dashboard-widget {
+  display: flex; }
+  .dashboard-widget-balance {
+    background-color: white;
+    height: 324px;
+    margin: 32px;
+    box-shadow: 0px 2px 8px rgba(134, 140, 144, 0.05);
+    border-radius: 16px;
+    flex: 1;
+    align-items: center; }
+    .dashboard-widget-balance-header {
+      padding: 32px;
+      display: flex;
+      align-items: center; }
+      .dashboard-widget-balance-header span {
+        color: #2A3135;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 32px; }
+      .dashboard-widget-balance-header div {
+        margin-left: auto;
+        color: #DCE0E2; }
+  .dashboard-widget-advertisement {
+    background-color: white;
+    height: 324px;
+    margin: 32px;
+    box-shadow: 0px 2px 8px rgba(134, 140, 144, 0.05);
+    border-radius: 16px;
+    flex: 1;
+    background: linear-gradient(139.39deg, #373b44 0%, #4286f4 100%), #ffffff;
+    color: white;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
+    .dashboard-widget-advertisement-header {
+      color: #ffffff;
+      text-shadow: 0px 2px 4px rgba(255, 255, 255, 0.15);
+      font-style: normal;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 48px;
+      margin-bottom: 8px;
+      flex: 4; }
+      .dashboard-widget-advertisement-header span:nth-of-type(2) {
+        font-size: 32px; }
+    .dashboard-widget-advertisement-body {
+      flex: 1; }
+      .dashboard-widget-advertisement-body button {
+        border: 1px solid #ffffff;
+        box-sizing: border-box;
+        border-radius: 24px;
+        background-color: transparent;
+        color: white;
+        padding: 12px 22px; }
+      .dashboard-widget-advertisement-body button:focus {
+        outline: 0; }
+  .dashboard-widget-operations {
+    background-color: white;
+    height: 324px;
+    margin: 32px;
+    box-shadow: 0px 2px 8px rgba(134, 140, 144, 0.05);
+    border-radius: 16px;
+    flex: 3;
+    align-items: center; }
+    .dashboard-widget-operations-header {
+      padding: 32px;
+      display: flex;
+      align-items: center; }
+      .dashboard-widget-operations-header span {
+        color: #2A3135;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 32px; }
+      .dashboard-widget-operations-header div:nth-of-type(1) {
+        margin-left: 8px;
+        color: #DCE0E2; }
+      .dashboard-widget-operations-header div:nth-of-type(2) {
+        margin-left: auto;
+        color: #DCE0E2; }
+  .dashboard-widget-rates {
+    background-color: white;
+    height: 324px;
+    margin: 32px;
+    box-shadow: 0px 2px 8px rgba(134, 140, 144, 0.05);
+    border-radius: 16px;
+    flex: 1;
+    align-items: center; }
+    .dashboard-widget-rates-header {
+      padding: 32px;
+      display: flex;
+      align-items: center; }
+      .dashboard-widget-rates-header span {
+        color: #2A3135;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 32px; }
+      .dashboard-widget-rates-header span:nth-of-type(2) {
+        color: #DCE0E2; }
+      .dashboard-widget-rates-header div:nth-of-type(1) {
+        margin-left: 0px;
+        text-align: center;
+        color: #DCE0E2; }
+        .dashboard-widget-rates-header div:nth-of-type(1) svg {
+          width: 24px;
+          height: 24px; }
+      .dashboard-widget-rates-header div:nth-of-type(2) {
+        margin-left: auto;
+        color: #DCE0E2; }
+    .dashboard-widget-rates-list {
+      display: flex;
+      flex-direction: column;
+      height: 200px;
+      overflow-x: hidden;
+      overflow-y: scroll; }
+      .dashboard-widget-rates-list::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background-color: white; }
+      .dashboard-widget-rates-list::-webkit-scrollbar {
+        width: 5px;
+        background-color: #F5F5F5;
+        margin-right: 5px; }
+      .dashboard-widget-rates-list::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: #DCE0E2; }
+      .dashboard-widget-rates-list-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 32px;
+        margin-right: 32px;
+        margin-bottom: 12px; }
+        .dashboard-widget-rates-list-item-logo {
+          flex: 2;
+          width: 48px;
+          height: 32px; }
+          .dashboard-widget-rates-list-item-logo img {
+            width: 34px;
+            height: 32px; }
+        .dashboard-widget-rates-list-item-name {
+          flex: 6;
+          text-align: center;
+          color: #868C90;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 24px; }
+        .dashboard-widget-rates-list-item-amount {
+          flex: 6;
+          text-align: right;
+          color: #2A3135;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 24px; }
+  .dashboard-widget-feed {
+    background-color: white;
+    height: 324px;
+    margin: 32px;
+    box-shadow: 0px 2px 8px rgba(134, 140, 144, 0.05);
+    border-radius: 16px;
+    flex: 3;
+    align-items: center; }
+    .dashboard-widget-feed-header {
+      padding: 32px;
+      display: flex;
+      align-items: center; }
+      .dashboard-widget-feed-header span {
+        color: #2A3135;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 32px; }
+      .dashboard-widget-feed-header div:nth-of-type(1) {
+        margin-left: 8px;
+        color: #DCE0E2; }
+      .dashboard-widget-feed-header div:nth-of-type(2) {
+        margin-left: auto;
+        color: #DCE0E2; }
+    .dashboard-widget-feed-list {
+      display: flex;
+      flex-direction: column;
+      height: 200px;
+      overflow-x: hidden;
+      overflow-y: scroll; }
+      .dashboard-widget-feed-list::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background-color: white; }
+      .dashboard-widget-feed-list::-webkit-scrollbar {
+        width: 5px;
+        background-color: #F5F5F5;
+        margin-right: 5px; }
+      .dashboard-widget-feed-list::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: #DCE0E2; }
+      .dashboard-widget-feed-list-item {
+        margin-left: 32px;
+        margin-right: 32px;
+        margin-bottom: 16px;
+        display: flex;
+        flex-direction: row; }
+        .dashboard-widget-feed-list-item-left {
+          padding-left: 20px;
+          border-left: 4px solid #DCE0E2;
+          border-radius: 2px;
+          flex: 23; }
+          .dashboard-widget-feed-list-item-left p {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: #2A3135; }
+          .dashboard-widget-feed-list-item-left div {
+            display: flex;
+            flex-direction: row; }
+            .dashboard-widget-feed-list-item-left div span:nth-of-type(1) {
+              font-style: normal;
+              font-weight: 500;
+              font-size: 14px;
+              line-height: 20px;
+              color: #868C90; }
+            .dashboard-widget-feed-list-item-left div span:nth-of-type(2) {
+              margin-left: auto;
+              font-style: normal;
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 20px;
+              color: rgba(242, 145, 27, 0.6); }
+        .dashboard-widget-feed-list-item-right {
+          margin-left: auto;
+          vertical-align: middle;
+          justify-content: center;
+          flex: 1; }
+          .dashboard-widget-feed-list-item-right svg {
+            color: #DCE0E2;
+            width: 24px;
+            height: 24px; }
+  .dashboard-widget-wallets {
+    background-color: white;
+    height: 324px;
+    margin: 32px;
+    box-shadow: 0px 2px 8px rgba(134, 140, 144, 0.05);
+    border-radius: 16px;
+    flex: 1;
+    align-items: center; }
+    .dashboard-widget-wallets-header {
+      padding: 32px;
+      display: flex;
+      align-items: center; }
+      .dashboard-widget-wallets-header span {
+        color: #2A3135;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 32px; }
+      .dashboard-widget-wallets-header div {
+        margin-left: auto;
+        color: #DCE0E2; }
